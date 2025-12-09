@@ -266,12 +266,14 @@ Exiting program...
 
 #define MAX 100
 
+// Global Arrays
 char productNames[MAX][50];
 int productQuantities[MAX];
 float productPrices[MAX];
 
 int count = 0;   // Total number of products
 
+// Function Declarations
 void addProduct();
 void viewInventory();
 void updateStock();
@@ -318,9 +320,11 @@ int main()
     }
 
     return 0;
-}
-void addProduct()
-{
+    }
+
+    //  Add Product
+    void addProduct()
+    {
     char name[50];
     int qty;
     float price;
@@ -355,9 +359,11 @@ void addProduct()
         count++;
         printf("\nProduct '%s' added successfully!\n", name);
     }
-}
-void viewInventory()
-{
+    }
+
+    //  View Inventory
+    void viewInventory()
+    {
     if (count == 0)
     {
         printf("\nInventory is empty.\n");
@@ -376,9 +382,11 @@ void viewInventory()
                productPrices[i]);
     }
     printf("\n-----------------------------------------\n");
-}
-void updateStock()
-{
+    }
+
+    //  Update Stock
+    void updateStock()
+    {
     char name[50];
     int newQty, found = 0;
 
@@ -400,10 +408,11 @@ void updateStock()
 
     if (!found)
         printf("\nProduct not found!\n");
-}
+    }
 
-void deleteProduct()
-{
+    //  Delete Product
+    void deleteProduct()
+    {
     char name[50];
     int found = 0;
 
@@ -429,9 +438,11 @@ void deleteProduct()
 
     if (!found)
         printf("\nProduct not found!\n");
-}
-void searchProduct()
-{
+    }
+
+    //  Search Product
+    void searchProduct()
+    {
     char name[50];
     int found = 0;
 
@@ -453,9 +464,11 @@ void searchProduct()
 
     if (!found)
         printf("\nProduct not found!\n");
-}
-void saveAndExit()
-{
+    }
+ 
+    //  Save & Exit
+    void saveAndExit()
+    {
     FILE *fp;
     fp = fopen("inventory.csv", "w");
 
@@ -480,6 +493,3 @@ void saveAndExit()
     printf("\nInventory saved to inventory.csv");
     printf("\nExiting program...\n");
 }
-
-
-
