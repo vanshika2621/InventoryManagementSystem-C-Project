@@ -261,28 +261,28 @@ Exiting program...
 
 ##  Project Code
 
-#include <stdio.h>
-#include <string.h>
+    #include <stdio.h>
+    #include <string.h>
 
-#define MAX 100
+    #define MAX 100
 
-// Global Arrays
-char productNames[MAX][50];
-int productQuantities[MAX];
-float productPrices[MAX];
+    // Global Arrays
+    char productNames[MAX][50];
+    int productQuantities[MAX];
+    float productPrices[MAX];
 
-int count = 0;   // Total number of products
+    int count = 0;   // Total number of products
 
-// Function Declarations
-void addProduct();
-void viewInventory();
-void updateStock();
-void deleteProduct();
-void searchProduct();
-void saveAndExit();
+    // Function Declarations
+    void addProduct();
+    void viewInventory();
+    void updateStock();
+    void deleteProduct();
+    void searchProduct();
+    void saveAndExit();
 
-int main()
-{
+    int main()
+    {
     int choice;
 
     while (1)
