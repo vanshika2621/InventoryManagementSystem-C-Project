@@ -1,0 +1,18 @@
+----------------------------------------------------------
+|Input	           |          Validation Done            |
+|--------------------------------------------------------|
+|Menu choice	   |      Checks if between 1 to 6       |
+|Product name	   |      Checked using strcmp()         |
+|Quantity	   |      Must be integer                | 
+|Price	           |      Must be float                  |
+|Duplicate Product |	  Existing name updates quantity |
+|File Save	   |      fp == NULL error checked       |
+----------------------------------------------------------
+
+✅ The program ensures:
+
+xNo duplicate product entries
+
+xInvalid menu choices are rejected
+
+xFile open errors are handled

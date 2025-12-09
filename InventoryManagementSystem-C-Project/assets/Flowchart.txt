@@ -1,0 +1,29 @@
+START
+  ↓
+Display Menu
+  ↓
+Enter Choice
+  ↓
+Is Choice = 1?
+ ├─ Yes → Add Product → Menu
+ ├─ No
+ ↓
+Is Choice = 2?
+ ├─ Yes → View Inventory → Menu
+ ├─ No
+ ↓
+Is Choice = 3?
+ ├─ Yes → Update Stock → Menu
+ ├─ No
+ ↓
+Is Choice = 4?
+ ├─ Yes → Delete Product → Menu
+ ├─ No
+ ↓
+Is Choice = 5?
+ ├─ Yes → Search Product → Menu
+ ├─ No
+ ↓
+Is Choice = 6?
+ ├─ Yes → Save to File → Exit
+ ├─ No → Invalid Choice → Menu

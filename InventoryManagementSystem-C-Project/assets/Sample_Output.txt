@@ -1,0 +1,42 @@
+▶ Main Menu:
+---------------------------------
+   INVENTORY MANAGEMENT SYSTEM
+---------------------------------
+1. Add Product
+2. View Inventory
+3. Update Stock
+4. Delete Product
+5. Search Product
+6. Save & Exit
+---------------------------------
+Enter your choice: 1
+
+
+▶ Add Product:
+Enter Product Name: Pen
+Enter Quantity: 10
+Enter Price: 5.50
+
+Product 'Pen' added successfully!
+
+
+▶ View Inventory:
+-----------------------------------------
+Product         Quantity    Price
+-----------------------------------------
+Pen             10          5.50
+-----------------------------------------
+
+
+▶ Search Product:
+Enter Product Name to Search: Pen
+
+Product Found!
+Name: Pen
+Quantity: 10
+Price: 5.50
+
+
+▶ Save & Exit:
+Inventory saved to inventory.csv
+Exiting program...

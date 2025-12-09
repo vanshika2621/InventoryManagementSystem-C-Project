@@ -1,0 +1,54 @@
+ALGORITHM: INVENTORY MANAGEMENT SYSTEM
+
+1. Start
+2. Initialize productNames, productQuantities, productPrices arrays
+3. Set count = 0
+
+4. Repeat until user chooses Exit:
+   a. Display Menu
+      1. Add Product
+      2. View Inventory
+      3. Update Stock
+      4. Delete Product
+      5. Search Product
+      6. Save & Exit
+
+   b. Read user choice
+
+   c. If choice == 1 then
+        - Input product name, quantity, price
+        - If product already exists
+            Update quantity and price
+          Else
+            Add new product
+      End If
+
+   d. If choice == 2 then
+        - Display all products
+      End IF
+
+   e. If choice == 3 then
+        - Input product name
+        - Update product quantity
+      End If
+
+   f. If choice == 4 then
+        - Input product name
+        - Delete product
+      End If
+
+   g. If choice == 5 then
+        - Input product name
+        - Search and display product details
+      End If
+
+   h. If choice == 6 then
+        - Save data into file (inventory.csv)
+        - Exit program
+      End If
+
+   i. If choice is invalid then
+        - Display error message
+      End If
+
+5. Stop
