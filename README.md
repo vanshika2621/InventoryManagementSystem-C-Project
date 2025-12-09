@@ -266,14 +266,12 @@ Exiting program...
 
 #define MAX 100
 
-// Global Arrays
 char productNames[MAX][50];
 int productQuantities[MAX];
 float productPrices[MAX];
 
 int count = 0;   // Total number of products
 
-// Function Declarations
 void addProduct();
 void viewInventory();
 void updateStock();
@@ -321,8 +319,6 @@ int main()
 
     return 0;
 }
-
-//  Add Product
 void addProduct()
 {
     char name[50];
@@ -360,8 +356,6 @@ void addProduct()
         printf("\nProduct '%s' added successfully!\n", name);
     }
 }
-
-//  View Inventory
 void viewInventory()
 {
     if (count == 0)
@@ -383,8 +377,6 @@ void viewInventory()
     }
     printf("\n-----------------------------------------\n");
 }
-
-//  Update Stock
 void updateStock()
 {
     char name[50];
@@ -410,7 +402,6 @@ void updateStock()
         printf("\nProduct not found!\n");
 }
 
-//  Delete Product
 void deleteProduct()
 {
     char name[50];
@@ -439,8 +430,6 @@ void deleteProduct()
     if (!found)
         printf("\nProduct not found!\n");
 }
-
-//  Search Product
 void searchProduct()
 {
     char name[50];
@@ -465,8 +454,6 @@ void searchProduct()
     if (!found)
         printf("\nProduct not found!\n");
 }
-
-//  Save & Exit
 void saveAndExit()
 {
     FILE *fp;
